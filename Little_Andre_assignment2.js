@@ -29,3 +29,18 @@ var workHours = function (timeToPlay){
         }
 };
 workHours(2);
+
+// Boolean Function
+console.log("Yes, I got some good gameplay earlier than expected, now I can eat something before I start editing.");
+
+var snacks = function(aSandWich, bagsOfChips, cupsOfKoolaid){
+    if (aSandWich + bagsOfChips + cupsOfKoolaid >= 5){
+        var notHungry = true;
+        return notHungry    
+    } else {
+        var stillHungry = false;
+        return stillHungry
+    }  
+};
+mySnacks = snacks(2,1,2);
+console.log("I am stuffed from my sandwich, chips, and koolaid. That we know is  " + mySnacks + ". Now, I can get back to making " + myHobby + " videos.");
