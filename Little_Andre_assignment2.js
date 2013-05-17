@@ -90,4 +90,4 @@ var lastTouch = function(toDo, minutes){
 var actsFinished = lastTouch(finishing, minutesPerProcess);
 console.log("Yes, I am done " + actsFinished + ".");
 
-console.log("Now I can rest until tomorrow, when it is time ti do it all over again.");
+console.log("Now I can rest until tomorrow, when it is time to do it all over again.");
