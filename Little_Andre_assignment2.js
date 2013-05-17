@@ -10,15 +10,14 @@
 var myName = "Andre Little";
 var myHobby = "YouTube";
 var ytContent = "Video game commentaries";
-var process = ["Get game-play", " edit game-play", " commentate over gameplay", " make a thumbnail"];
-var minutesPerProcess = [120, 30, 15, 20];
+var finishing = ["doing thumbnail pictures", " creating Information for my video", " uploading my video", " messaging my subscribers"];
+var minutesPerProcess = [15, 10, 30, 10];
 var nintendoConsoles = 4;
 var timeOfUpload = 60;
 var uploadComplete = true;
 
 console.log("Hi again, my name is " + myName + ".");
 console.log("I have a hobby where I upload " + ytContent + " to " + myHobby + ".");
-console.log("There is a certain order I go in when I upload " + process + ".");
 
 // Procedure
 var workHours = function (timeToPlay){
@@ -71,3 +70,24 @@ console.log(myChoice);
 console.log("If I want to save time I might want to think about this.");
 
 // Array Function
+
+console.log("Now that I have made my choice on which audio software I wanted to use, and recorded it time to add the finishing touches for this project");
+
+var lastTouch = function(toDo, minutes){
+    for (var toDoNumber = 0; toDoNumber < toDo.length; toDoNumber++){
+        var actsDone = toDo;
+        var actName = toDo[toDoNumber];
+        var minutesPerAct = minutes[toDoNumber];
+        console.log("Started " + actName + " for " + minutesPerAct + " minutes.");
+        for (var min = 0; min < minutesPerAct; min+=5) {
+            var minPassed = minutesPerAct - min;
+            console.log(min + " minutes has passed by " + minPassed + " minutes to go.");
+        }
+            console.log("I am done " + actName + "."); 
+    }       return actsDone;
+    
+};
+var actsFinished = lastTouch(finishing, minutesPerProcess);
+console.log("Yes, I am done " + actsFinished + ".");
+
+console.log("Now I can rest until tomorrow, when it is time ti do it all over again.");
