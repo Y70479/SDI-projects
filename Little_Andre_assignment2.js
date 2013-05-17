@@ -12,10 +12,8 @@ var myHobby = "YouTube";
 var ytContent = "Video game commentaries";
 var finishing = ["doing thumbnail pictures", " creating Information for my video", " uploading my video", " messaging my subscribers"];
 var minutesPerProcess = [15, 10, 30, 10];
-var nintendoConsoles = 4;
-var timeOfUpload = 60;
-var uploadComplete = true;
 
+// Outputs
 console.log("Hi again, my name is " + myName + ".");
 console.log("I have a hobby where I upload " + ytContent + " to " + myHobby + ".");
 
@@ -63,7 +61,7 @@ console.log("My edit is done. Now it is time to record the Audio.");
 var audioChoices = function(choiceOne, choiceTwo){
     var sony = (" is a more professional program to use, but is far more complicated and it crashes sometimes.");
     var adobe = (" is the easiest program to use out of the two.")
-    return choiceOne + sony + " but " + choiceTwo + adobe;
+    return choiceOne + sony + " And " + choiceTwo + adobe;
 };
 var myChoice = audioChoices("Vegas Pro", "Audition");
 console.log(myChoice);
