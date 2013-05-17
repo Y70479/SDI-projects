@@ -57,3 +57,17 @@ var editMode = function(timeToEdit){
 };
 var editFinished = editMode(120);
 console.log("Dang, I have " + editFinished + " minutes left to edit this video, time to commentate over it.");
+
+// String Function
+console.log("My edit is done. Now it is time to record the Audio.");
+
+var audioChoices = function(choiceOne, choiceTwo){
+    var sony = (" is a more professional program to use, but is far more complicated and it crashes sometimes.");
+    var adobe = (" is the easiest program to use out of the two.")
+    return choiceOne + sony + " but " + choiceTwo + adobe;
+};
+var myChoice = audioChoices("Vegas Pro", "Audition");
+console.log(myChoice);
+console.log("If I want to save time I might want to think about this.");
+
+// Array Function
