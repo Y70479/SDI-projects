@@ -44,3 +44,16 @@ var snacks = function(aSandWich, bagsOfChips, cupsOfKoolaid){
 };
 mySnacks = snacks(2,1,2);
 console.log("I am stuffed from my sandwich, chips, and koolaid. That we know is  " + mySnacks + ". Now, I can get back to making " + myHobby + " videos.");
+
+// Number Function
+console.log("Now that I am full and have a great gameplay, its time for me to edit the gameplay.");
+
+var editMode = function(timeToEdit){
+    while (timeToEdit > 0) {
+        console.log("I have " + timeToEdit + " minutes left to edit this video.");
+        timeToEdit = timeToEdit - 1;
+    }
+    return timeToEdit;
+};
+var editFinished = editMode(120);
+console.log("Dang, I have " + editFinished + " minutes left to edit this video, time to commentate over it.");
