@@ -35,3 +35,43 @@ var myTeam = {
         }
     ]
 };
+
+
+ // Procedure
+ var practice = function(timeToPlay){
+    if (timeToPlay < 4) {
+        console.log("The number of hours we played today is " + timeToPlay + "." + "We can play for at least 2-3 more hours.");//code
+    } else {
+        console.log("We usually practice for " + timeToPlay + " hours a day, and then stop for the day.");
+    }
+ };
+ 
+ // Boolean
+ var gameMode = {
+     flagCaps: function(rd1, rd2){
+     if(rd1 + rd2 > 3){
+         var gotBetter = true
+         return gotBetter;
+    } else {
+         var practiceDone = false;
+         return practiceDone
+         }   
+    }
+ };
+ 
+
+
+
+
+// Outputs
+console.log ("Hello everyone, my name is " + teamCaptain + " and I am team Captain for team " + teamName + ".");
+console.log ("Team " + teamName + " is a pro gaming team, that plays " + gameName + " on the " + consoleName + ".");
+console.log ("I am going to let you all know how I run my team as the captain.")
+practice(6);
+console.log ("There are " + mapCount + " maps we play, but " + mapsWePlay[0] + " is the map we need more practice on.")
+console.log (mapsWePlay[0] + " game mode is Capture the Flag. There are 2 rounds, with " + minutesPerMap[2] + " minutes per round.");
+console.log ("The way Capture the Flag works is having more flag captures than the other team.");
+console.log ("It is " + gameMode.flagCaps(3,1) + " That we are getting better at CTF.");
+console.log 
+
+console.log ("Thanks to team " + teamName + " and their team " + myTeam.zwoMembers[0].position + myTeam.zwoMembers[0].player + " for a great game." );
