@@ -5,7 +5,7 @@
 // Project 3
 // Video Game Tournament
 
-// Global Variables
+// Variables
 var teamName = "Zwo";
     teamCaptain = "DaFightingRobot";
     teamSlayer = "TheColinies";
