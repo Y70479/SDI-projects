@@ -71,8 +71,16 @@ var teamDM = {
 };
 
 // string
-
-
+var demo = {
+    demoChoice: function(choice1, choice2){
+    plant1 = (" bomb plant is upstairs and the hardest to get to.");
+    plant2 = (" bomb plant is usually out in the open, but if not then its in a building in the basement.");
+    return (choice1 + plant1 + " While, the " + choice2 + plant2);
+    }
+};
+var ourChoice = demo.demoChoice('"A"', '"B"');
+ 
+// Array
 
 
 
@@ -98,4 +106,14 @@ console.log ("It is " + gameMode.flagCaps(3,1) + " That we are getting better at
 console.log ("After we got our game mode up in CTF, it's time to work on our Team Death Math routes on the map " + mapsWePlay[2] + "." );
 console.log ("The way TDM works is the first team to 7500pts wins, with each kill worth 100pts");
 console.log ("We have achieved " + teamDM.kills(0) + " pts. Now, on to the next mode.");
+console.log ("When we are confident enough to move on, we do the game mode Demolition on the map " + mapsWePlay[1] + ".");
+console.log ('Demolition is like SnD, but you have to get both the "A" and  "B" bombs planted in order to win.')
+console.log (ourChoice);
+console.log ("")
+
+
+
+
+
+
 console.log ("Thanks to team " + teamName + " and their team " + myTeam.zwoMembers[0].position + myTeam.zwoMembers[0].player + " for a great game." );
