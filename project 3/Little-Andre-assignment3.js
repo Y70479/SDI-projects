@@ -58,7 +58,30 @@ var myTeam = {
          }   
     }
  };
- 
+
+// Numbers
+var teamDM = {
+    kills: function(zwoKills){
+        while (zwoKills < 7500) {
+            console.log ("We have " + zwoKills + " pts right now, we need more.")
+            zwoKills = zwoKills + 100;//code
+        }
+        return zwoKills;
+    }
+};
+
+// string
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,6 +95,7 @@ console.log ("There are " + mapCount + " maps we play, but " + mapsWePlay[0] + "
 console.log (mapsWePlay[0] + " game mode is Capture the Flag. There are 2 rounds, with " + minutesPerMap[2] + " minutes per round.");
 console.log ("The way Capture the Flag works is having more flag captures than the other team.");
 console.log ("It is " + gameMode.flagCaps(3,1) + " That we are getting better at CTF.");
-console.log 
-
+console.log ("After we got our game mode up in CTF, it's time to work on our Team Death Math routes on the map " + mapsWePlay[2] + "." );
+console.log ("The way TDM works is the first team to 7500pts wins, with each kill worth 100pts");
+console.log ("We have achieved " + teamDM.kills(0) + " pts. Now, on to the next mode.");
 console.log ("Thanks to team " + teamName + " and their team " + myTeam.zwoMembers[0].position + myTeam.zwoMembers[0].player + " for a great game." );
