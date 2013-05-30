@@ -21,12 +21,51 @@ var myLibrary = function(){
             }
     }; // End numCheck
     
+    // 2.) Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+   var numValue = function (number) {
+        return Number(number);
+   
+    }; // End numValue 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return {
-        "numCheck": numCheck
+        "numCheck": numCheck,
+        "numValue": numValue
     }
     
     
 } // End myLibrary
+
+
 var myNewLibrary = new myLibrary();
 
 console.log(myNewLibrary.numCheck("800-869-7787"));
+console.log(myNewLibrary.numValue("15"));
