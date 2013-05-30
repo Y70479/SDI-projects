@@ -22,13 +22,16 @@ var myLibrary = function(){
     }; // End numCheck
     
     // 2.) Given a string version of a number such as "42", return the value as an actual Number, such as 42.
-   var numValue = function (number) {
-        return Number(number);
+   var numValue = function (myNumber) {
+        return Number(myNumber);
    
     }; // End numValue 
     
+    // 3. Format a number to use a specific number of decimal places, as for money: 2.1 -> 2.10
+    var decimal = function (beforeDeci, afterDeci) {
+        return Number(beforeDeci.toFixed(afterDeci));
     
-    
+    }; // End Decimal
     
     
     
@@ -58,7 +61,8 @@ var myLibrary = function(){
     
     return {
         "numCheck": numCheck,
-        "numValue": numValue
+        "numValue": numValue,
+        "decimal": decimal
     }
     
     
@@ -69,3 +73,4 @@ var myNewLibrary = new myLibrary();
 
 console.log(myNewLibrary.numCheck("800-869-7787"));
 console.log(myNewLibrary.numValue("15"));
+console.log(myNewLibrary.decimal(3.14159265359, 2));
