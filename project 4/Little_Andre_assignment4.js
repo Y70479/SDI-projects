@@ -51,37 +51,24 @@ var myLibrary = function(){
         modified = myName
             return myName.charAt(0).toUpperCase() + myName.substr(1);
         
-     };
+     }; // end nameCheck
+       
+    // 6.) 
+   var inputSlash = function (alph,slash) {
+	var input = /\W/g;
+	return alph.replace(input,slash);
+    };
 
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     return {
         "numCheck": numCheck,
         "numValue": numValue,
         "decimal": decimal,
         "urlCheck": urlCheck,
-        "nameCheck": nameCheck
-    }
+        "nameCheck": nameCheck,
+        "inputSlash": inputSlash  
+    };
     
     
 } // End myLibrary
@@ -94,3 +81,4 @@ console.log(myNewLibrary.numValue("15"));
 console.log(myNewLibrary.decimal(3.14159265359, 2));
 console.log(myNewLibrary.urlCheck("http://www.fullsail.edu"));
 console.log(myNewLibrary.nameCheck("andre"));
+console.log(myNewLibrary.inputSlash("A B C","/"));
