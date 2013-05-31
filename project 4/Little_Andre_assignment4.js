@@ -46,9 +46,14 @@ var myLibrary = function(){
         
     }; // End urlCheck
     
-    
-    
-    
+    // 5.) Title-case a string (split into words, then uppercase the first letter of each word.
+     var nameCheck = function(myName){
+        modified = myName
+            return myName.charAt(0).toUpperCase() + myName.substr(1);
+        
+     };
+
+   
     
     
     
@@ -74,7 +79,8 @@ var myLibrary = function(){
         "numCheck": numCheck,
         "numValue": numValue,
         "decimal": decimal,
-        "urlCheck": urlCheck
+        "urlCheck": urlCheck,
+        "nameCheck": nameCheck
     }
     
     
@@ -87,3 +93,4 @@ console.log(myNewLibrary.numCheck("800-869-7787"));
 console.log(myNewLibrary.numValue("15"));
 console.log(myNewLibrary.decimal(3.14159265359, 2));
 console.log(myNewLibrary.urlCheck("http://www.fullsail.edu"));
+console.log(myNewLibrary.nameCheck("andre"));
