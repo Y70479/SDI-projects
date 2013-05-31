@@ -14,7 +14,7 @@ var myLibrary = function(){
             bDash = dash.indexOf("-");
             eDash = dash.lastIndexOf("-");
             
-            if (total === 12 && bDash === 3 && eDash === 7) {
+            if (total === 12 || bDash === 3 || eDash === 7) {
                 return true;
             } else {
                 return false;
@@ -27,13 +27,24 @@ var myLibrary = function(){
    
     }; // End numValue 
     
-    // 3. Format a number to use a specific number of decimal places, as for money: 2.1 -> 2.10
-    var decimal = function (beforeDeci, afterDeci) {
-        return Number(beforeDeci.toFixed(afterDeci));
+    // 3.) Format a number to use a specific number of decimal places, as for money: 2.1 -> 2.10
+    var decimal = function (pi, afterDeci) {
+        return Number(pi.toFixed(afterDeci));
     
     }; // End Decimal
     
-    
+    // 4.) Is the string a URL (Does it start with http:// or https://)?
+    var urlCheck = function (u1, u2) {
+        var address = "www.fullsail.edu";
+        if (u1 === "http://" + address) {
+            return true;
+        } if (u2 === " https://" + address) {
+            return true;
+        } else {
+            return false;
+        }
+        
+    }; // End urlCheck
     
     
     
@@ -62,7 +73,8 @@ var myLibrary = function(){
     return {
         "numCheck": numCheck,
         "numValue": numValue,
-        "decimal": decimal
+        "decimal": decimal,
+        "urlCheck": urlCheck
     }
     
     
@@ -74,3 +86,4 @@ var myNewLibrary = new myLibrary();
 console.log(myNewLibrary.numCheck("800-869-7787"));
 console.log(myNewLibrary.numValue("15"));
 console.log(myNewLibrary.decimal(3.14159265359, 2));
+console.log(myNewLibrary.urlCheck("http://www.fullsail.edu"));
